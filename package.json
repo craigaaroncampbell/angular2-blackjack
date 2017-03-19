@@ -1,9 +1,7 @@
 {
-  "name": "photoblog",
+  "name": "angular-2-blackjack",
   "scripts": {
-    "postinstall": "npm run build",
-    "serve": "webpack-dev-server --config config/develop.config.js --inline --progress --port 8080",
-    "build": "webpack"
+    "start": "webpack-dev-server --config config/develop.config.js --inline --progress --port 8080"
   },
   "dependencies": {
     "@angular/common": "2.4.2",
