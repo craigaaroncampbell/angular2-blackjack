@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { HeaderComponent, ControlsComponent } from './header/index';
+import { CardTableComponent } from './card-table/index';
 
 @NgModule({
     imports: 
@@ -11,6 +13,9 @@ import { AppComponent } from './app.component';
     declarations: 
     [
         AppComponent,
+        HeaderComponent,
+        ControlsComponent,
+        CardTableComponent,
     ],
 
     bootstrap:  [ AppComponent],
