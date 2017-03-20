@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 
-// import {ButtonModule} from 'primeng/components/button/button';
 import {ButtonModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';

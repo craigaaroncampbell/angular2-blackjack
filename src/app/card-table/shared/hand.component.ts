@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from './card.model';
+import { CardService } from './card.service';
 
 @Component({
     selector: 'app-hand',
@@ -10,12 +11,19 @@ import { Card } from './card.model';
 export class HandComponent implements OnInit {
     cards: Card[];
 
-    constructor() {
+    constructor(private cardService: CardService) {
         this.cards = [];
+        
         
     }
 
+    getCard(): Card {
+       return this.cardService.getCard();
+    }
     ngOnInit(): void {
-        this.cards.push({suit: 'clubs', rank: '2'})
+        //TODO: make sure that the second (and any subsequent cards) are not duplicates - this applies to ALL hands NOT just this one!
+        this.cards.push(this.getCard());
+        this.cards.push(this.getCard());
+
     }
 }

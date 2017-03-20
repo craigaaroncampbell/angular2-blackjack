@@ -1,0 +1,1 @@
+A simple game of blackjack to get aquainted with Angular2
