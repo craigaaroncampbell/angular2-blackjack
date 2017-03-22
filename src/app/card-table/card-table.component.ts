@@ -9,5 +9,8 @@ import { Card } from './shared/card.model';
 })
 export class CardTableComponent {
 
+    meh(): void {
+        // send data into children
+    }
       
 }

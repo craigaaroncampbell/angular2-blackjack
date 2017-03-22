@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 
 })
 export class ControlsComponent {
+    turn: string;
+
+    constructor() {
+        this.turn = 'player';
+    }
+
+    stay(): void {
+        // if hte player stays then it is dealer's turn
+        this.turn = 'dealer'
+    }
+
     hit() : void {
         // if it is player's turn: call that hand's getCard() method
 

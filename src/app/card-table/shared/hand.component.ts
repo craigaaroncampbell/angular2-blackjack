@@ -15,19 +15,18 @@ export class HandComponent implements OnInit {
 
     constructor(private cardService: CardService) {
         this.cards = [];
-       
+
     }
 
     getCard(): void {
-
         let newCard = this.cardService.getCard();
-   
         this.cards.push(newCard);
     }
 
     getStartingHand(): void {
         this.getCard();
         this.getCard();
+        
         // 2nd card facedown for dealer
         if (this.role === 'dealer') this.cards[1].faceDown = true;
     }
