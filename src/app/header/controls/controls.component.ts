@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 
 })
 export class ControlsComponent {
+    hit() : void {
+        // if it is player's turn: call that hand's getCard() method
 
+        // if it is dealer's turn: call that hand's getCard() method
+    }
 }

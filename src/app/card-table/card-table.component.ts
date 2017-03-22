@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Card } from './shared/card.model';
 
 @Component({
     selector: 'app-card-table',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class CardTableComponent {
 
+      
 }
