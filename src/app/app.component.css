@@ -1,0 +1,14 @@
+.card-table {
+    background-color: green;
+    height: 90vh;
+    padding: 5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+

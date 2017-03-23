@@ -1,3 +1,13 @@
-<app-header></app-header>
+<header>
+    <h1>Black Jack</h1>
+    <app-game-controls (playerHit)="player.getCard()" (dealerHit)="dealer.getCard()" (flipDealerCard)="dealer.flipCard()" ></app-game-controls>
+</header>
 
-<app-card-table></app-card-table>
+<div class="card-table">
+    <!--dealer hand -->
+    <app-hand role="dealer" #dealer></app-hand>
+
+    <!--player hand-->
+    <app-hand role="player" #player></app-hand>
+
+</div>

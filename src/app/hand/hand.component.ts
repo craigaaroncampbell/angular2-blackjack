@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Card } from './card.model';
-import { CardService } from './card.service';
+import { Card } from '../card/card.model';
+import { CardService } from '../card/card.service';
 
 @Component({
     selector: 'app-hand',
@@ -29,6 +29,15 @@ export class HandComponent implements OnInit {
         
         // 2nd card facedown for dealer
         if (this.role === 'dealer') this.cards[1].faceDown = true;
+    }
+
+    flipCard() : void {
+        // should only be used for dealer hand on start of dealer's turn
+        if (this.role === 'dealer') {
+            // this.cards[1].faceDown = false;
+            alert("I want to flip the dealer's card over when i hit this button.. nope... i need to deal with the component. maybe try viewchild ?")
+        }
+
     }
 
     ngOnInit(): void {

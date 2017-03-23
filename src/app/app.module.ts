@@ -7,8 +7,9 @@ import { HttpModule }    from '@angular/http';
 import {ButtonModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent, ControlsComponent } from './header/index';
-import { CardTableComponent, HandComponent, CardComponent, CardService } from './card-table/index';
+import {  ControlsComponent } from './controls/index';
+import { HandComponent } from './hand/index';
+import { CardComponent, CardService } from './card/index';
 
 
 @NgModule({
@@ -23,9 +24,7 @@ import { CardTableComponent, HandComponent, CardComponent, CardService } from '.
     declarations: 
     [
         AppComponent,
-        HeaderComponent,
         ControlsComponent,
-        CardTableComponent,
         HandComponent,
         CardComponent
     ],
